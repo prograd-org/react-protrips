@@ -91,3 +91,34 @@ body {
 .trip select option {
   background: #222f3e;
 }
+
+table {
+  width: 30vw;
+  text-align: left;
+}
+
+table tr:nth-child(1) th {
+  border-bottom: 3px solid white;
+}
+
+.symbol {
+  font-size: 10px;
+}
+
+.filter {
+  height: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+
+.filter span:hover {
+  cursor: pointer;
+}
+
+.headD {
+  font-size: 70px;
+  position: relative;
+  top: -5vh;
+}
