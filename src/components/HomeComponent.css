@@ -1,0 +1,36 @@
+.home-component{
+    color: white;
+    text-align: center;
+}
+
+#totalTrips{
+    font-size: 100px;
+
+}
+
+.trips{
+    font-size: medium;
+}
+
+#tripLogs{
+    font-size: 70px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+#progressBar{
+    width: 100px;
+    height: 10px;
+    background-color: white;
+}
+#progressBarContainer{
+    display: flex;
+    align-items: center;
+}
+#progress{
+    margin-left: 10px;
+}
+.icons{
+    position: relative;
+    top: 3px;
+}
