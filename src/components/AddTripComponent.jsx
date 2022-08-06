@@ -26,17 +26,39 @@ class AddTripComponent extends Component {
                             let tripDate = document.getElementById('trip-date').value;
                             let tripPlace = document.getElementById('trip-place').value;
                             let tripType = document.getElementById('trip-type').value;
-                            trips[tripDate] = {
-                                place: tripPlace,
-                                type: tripType
+                            if(tripDate && tripPlace && tripType){
+                                trips[tripDate] = {
+                                    place: tripPlace,
+                                    type: tripType
+                                }
+                                this.props.clickHandler(trips)
+                                document.getElementById('trip-date').value = ""
+                                document.getElementById('trip-place').value = ""
+                                this.showToast("Added trip successfully")
                             }
-                            this.props.clickHandler(trips)
                         }}
                     >Submit</button>
                 </div>
+                <div id='toast'></div>
             </div>
         );
     }
+
+    showToast(text) {
+        let toast = document.getElementById('toast');
+        toast.innerHTML = text;
+        let opc = 1;
+        toast.style.opacity = 1;
+        let id = setInterval(() => {
+            if(opc <= 0){
+                clearInterval(id);
+            }else{
+                toast.style.opacity = opc;
+                opc -= 0.01;
+            }
+        }, 20);
+    }
+        
 }
 
 export default AddTripComponent;
