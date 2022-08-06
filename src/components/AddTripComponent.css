@@ -1,0 +1,31 @@
+.add-trip{
+    color: white;
+}
+.head-text{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+input, select, button{
+    width: 200px;
+    padding: 10px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    outline-color: white;
+    margin: 5px 0;
+}
+select{
+    width: 225px;
+    background-color: #222f3e;
+}
+
+button{
+    width: 100px;
+    padding: 10px;
+    margin: 20px 62px 0 62px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.318);
+}
